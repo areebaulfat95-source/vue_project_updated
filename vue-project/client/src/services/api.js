@@ -5,7 +5,7 @@
 
 import axios from 'axios'
 
-const BASE_URL = import.meta.env.VITE_API_URL || 'http://localhost:5000/api'
+const BASE_URL = import.meta.env.VITE_API_URL || "https://vue-project-updated-smt1.vercel.app/api"
 const TOKEN_KEY = 'authToken'
 
 const getToken = () => localStorage.getItem(TOKEN_KEY)
