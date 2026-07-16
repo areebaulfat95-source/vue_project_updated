@@ -21,6 +21,12 @@ app.use(
 );
 app.use(express.json());
 
+app.get('/', (req, res) => {
+  res.json({
+    message: 'SLTS Backend is running successfully'
+  });
+});
+
 // Simple health check — useful for your code demonstration
 app.get('/api/health', (req, res) => {
   res.json({ status: 'ok', service: 'SLTS backend', time: new Date().toISOString() });
